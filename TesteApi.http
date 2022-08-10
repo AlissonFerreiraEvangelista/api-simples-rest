@@ -1,0 +1,30 @@
+@apiurl = http://localhost:3000
+
+###
+GET  {{apiurl}}/user/allUsers
+
+###
+GET  {{apiurl}}/user/1
+
+###
+POST {{apiurl}}/user/create
+Content-Type: application/json
+
+{
+    "firstName":"Alisson",
+    "lastName":"Evangelista",
+    "email":"Alisson@gmail.com"  
+}
+
+###
+DELETE {{apiurl}}/user/10
+
+###
+PUT {{apiurl}}/user/2
+Content-Type: application/json
+
+{
+    "firstName":"Gabriela",
+    "lastName":"Evangelista",
+    "email":"Gabriela@gmail.com"  
+}
